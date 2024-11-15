@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="880px" height="517px" viewBox="0 0 880 517" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <defs>
+        <path d="M791.698754,19.5940418 C830.649533,56.7649155 853.789581,88.0585662 861.118897,113.474994 C883.230634,190.153544 879.404257,287.742939 866.893797,325.018077 C849.642555,376.41846 807.932393,407.832463 741.76331,419.260086 C722.124898,456.515743 679.489893,482.887603 613.858295,498.375667 C548.226697,513.863731 493.022175,511.965326 448.244728,492.680452 C368.609842,516.618223 296.292075,520.397843 231.291425,504.019313 C166.290775,487.640784 124.910043,463.3186 107.149229,431.052764 C64.39307,418.636138 38.1377869,402.342979 28.3833803,382.173287 C-4.61917554,313.932194 4.02022784,209.278194 4.02022784,167.704671 C4.02022784,107.69962 38.3965617,57.5639861 107.149229,17.2977691 C110.284349,14.9881362 113.765698,12.7580457 117.593278,10.6074975 C113.917722,15.4335648 112,20.41165 112,25.5 C112,69.9589224 258.402887,106 439,106 C619.597113,106 766,69.9589224 766,25.5 C766,20.1980096 763.917861,15.0157375 759.943896,10.0000345 L780,9.99899867 C779.999984,9.65372494 779.991901,9.30892645 779.975794,8.96461455 C784.809775,12.3083392 788.720203,15.851312 791.698754,19.5940418 Z" id="path-1"></path>
+        <filter x="-0.6%" y="-2.0%" width="101.1%" height="103.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Combined-Shape">
+            <use fill="#C4884A" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use stroke="#323232" stroke-width="6" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

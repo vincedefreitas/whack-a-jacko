@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Whack-A-Jacko</title>
+    <link rel="icon" type="image/x-icon" href="images/ghost-hands-up.svg" />
+  </head>
+  <body>
+    <dialog class="modal-container">
+      <p class="modal-ptag" id="modal-text">
+        Click as many ghosts as you can in 30 seconds!
+      </p>
+      <img
+        class="modal-button"
+        id="modal-button"
+        src="images/start-button.svg"
+      />
+    </dialog>
+    <header>
+      <div class="countdown-container" id="countdown">
+        <span id="countdown">30</span>
+      </div>
+    </header>
+    <div class="grid-container">
+      <div id="pumpkin-1" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-2" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-3" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-4" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-5" class="grid-item">
+        <div class ="countModal" id = "countModal"><span id ='textbox'></span></div>
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-6" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-7" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-8" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+      <div id="pumpkin-9" class="grid-item">
+        <img class="ghost popped-up" src="./images/ghost.svg" alt="ghost" />
+        <img class="pumpkin" src="images/pumpkin.svg" alt="pumpkin" />
+        <img
+          class="pumpkin-inside"
+          src="images/dark mid layer.svg"
+          alt="pumpkin"
+        />
+        <img
+          class="pumpkin-inside-top"
+          src="images/dark insides.svg"
+          alt="pumpkin"
+        />
+        <div class="hitbox"></div>
+        <div class="pumpkin-glow"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="score-container" id="scoreBoard">
+        <h3>Score:</h3>
+        <span id="score">0</span>
+      </div>
+    </footer>
+  </body>
+</html>

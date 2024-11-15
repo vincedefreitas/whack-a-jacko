@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+:root {
+  --swatch-green: rgb(77, 107, 69);
+  --swatch-brown: rgb(63, 33, 7);
+  --swatch-orange: rgb(251, 152, 33);
+  --swatch-yellow: rgb(252, 205, 102);
+}
+
+body {
+  background-color: var(--swatch-green);
+  font-family: "Creepster", system-ui;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.countdown-container {
+  background-color: var(--swatch-orange);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.countdown-container span {
+  font-size: 3rem;
+}
+
+#start-btn {
+  background-color: var(--swatch-orange);
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 4px solid var(--swatch-orange);
+  letter-spacing: 2px;
+}
+
+#start-btn:hover {
+  cursor: pointer;
+  border: 4px solid var(--swatch-yellow);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--swatch-brown);
+  border: 3px solid var(--swatch-orange);
+  border-radius: 10px;
+  gap: 5px;
+  padding: 5px;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 30px auto;
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: var(--swatch-brown);
+  user-select: none;
+}
+
+img {
+  width: 100%;
+}
+
+.score-container {
+  background-color: var(--swatch-orange);
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 0 auto;
+  width: 8em;
+  text-align: center;
+}
+
+.ghost,
+.pumpkin,
+.pumpkin-inside,
+.pumpkin-inside-top {
+  position: absolute;
+}
+
+.pumpkin,
+.pumpkin-inside,
+.pumpkin-inside-top {
+  width: 70%;
+  bottom: 10%;
+}
+
+.ghost {
+  width: 50%;
+  bottom: 15%;
+  transition: transform 0.25s;
+  z-index: 1;
+}
+
+.pumpkin {
+  z-index: 3;
+}
+
+.pumpkin-inside {
+  z-index: 2;
+}
+
+.popped-up {
+  transform: translateY(-50%);
+}
+
+.whacked-hop {
+  transform: translateY(-65%);
+}
+
+.glow {
+  position: absolute;
+  aspect-ratio: 1.1;
+  width: 35%;
+  z-index: 2;
+  border-radius: 25%;
+  background-color: rgb(254, 254, 102);
+  bottom: 13%;
+  box-shadow: 0 2vw 8vw 0 yellow;
+}
+
+.hitbox {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 70%;
+  z-index: 5;
+}
+
+.active:hover {
+  cursor: pointer;
+}
+
+.modal-container {
+  background-image: url(images/tombstone-inset-sign.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 360px;
+  height: 720px;
+  margin: 0 auto;
+  padding-top: 360px;
+}
+
+dialog::backdrop {
+  background-color: #00000033;
+  backdrop-filter: blur(3px) sepia(100%) brightness(70%);
+}
+
+.modal-ptag {
+  color: #979797;
+  font-size: 1.5rem;
+  max-width: 220px;
+  z-index: 11;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 10px auto;
+  padding-bottom: 8%;
+}
+
+.modal-tombstone {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  width: 375px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-button {
+  display: block;
+  width: 200px;
+  position: relative;
+  z-index: 11;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-button:hover {
+  cursor: pointer;
+}
+
+.countModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #3f2107;
+  border: 3px solid #fb9821;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .grid-container {
+    width: auto;
+    max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .grid-container {
+    width: auto;
+    max-height: 60vh;
+  }
+
+  .modal-button {
+    width: 250px;
+  }
+}
